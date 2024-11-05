@@ -32,7 +32,7 @@ const SearchBox = ({ onSearch }) => {
 
 const WeatherCard = ({ title, reading }) => {
   return (
-    <div className="weathercard">
+    <div className="weather-card">
       <h2>{title}</h2>
       <p>{reading}</p>
     </div>
@@ -71,7 +71,7 @@ const WeatherDisplay = ({ city }) => {
 
   return (
     <div className="weatherDisplay">
-      {loading && <p>Loading data…</p>}
+      {loading && <p>Loading data...</p>}
       {!loading && weatherData && (
         <div className="weather-cards">
           <WeatherCard
